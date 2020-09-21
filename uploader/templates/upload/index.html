@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Image Service{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">An Image Upload Service.!</h1>
+  <p class="lead">This Service is used for uploading images. File size should be less than 2MB.</p>
+  <hr class="my-4">
+  <p>Start by Clicking the button below.</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('uploader') }}" role="button">Begin Uploading</a>
+</div>
+{% endblock %}
