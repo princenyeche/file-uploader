@@ -1,4 +1,4 @@
-# Image Uploader
+# File Uploader
 An Image Micro Service - This Service is used to Store Images for single files and multiple files and output the direct url link.Basically it doesn't have to be an Image, you can change to any file you want but the example on this Repo is using an Image.
 ![](https://raw.githubusercontent.com/princenyeche/image-uploader/master/images/uploader.png)
 
