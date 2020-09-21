@@ -10,8 +10,9 @@ An Image Micro Service - This Service is used to Store Images for single files a
 
 * Clone the Repo into your local machine.
 * ensure you have Python Installed or Goto https://www.python.org/downloads/ any version from v3.6.x will do.
+* if you're not on python3.6, you can use a virtual environment to run the App.
 * You will also need to ensure you have PIP on your computer with the download. check by using `pip --version`
-* You will need to install Flask module, do so by using `pip install Flask`
+* You will need to install Flask module, do so by using `pip install -r requirements.txt`
 * Once installed, `cd` into the directory so you can run a local server on Terminal by doing the below
 ```bash
 $: export FLASK_APP=uploader && FLASK_ENV=development 
