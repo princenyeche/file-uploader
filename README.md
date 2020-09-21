@@ -16,7 +16,7 @@ An Image Micro Service - This Service is used to Store Images for single files a
 * You will need to install Flask module, do so by using `pip install -r requirements.txt`
 * Once installed, `cd` into the directory so you can run a local server on Terminal by doing the below
 ```bash
-$: export FLASK_APP=uploader && FLASK_ENV=development 
+$: export FLASK_APP=app.py && FLASK_ENV=development 
 $: flask run
 ```
 * This will start up a local server with debug mode on. If you do not want debug on, you can set `FLASK_ENV=production`
