@@ -10,7 +10,6 @@
         <a href="{{ url_for('delete', filename=filename) }}">Delete</a></li>
 
     </ul>
-  {% set folder = folder %}
   {% elif data  %}
   <!-- the string on filename basically just shows a view folder -->
   <a href="{{ url_for('delete', filename='folder') }}">Delete All files</a></li>
