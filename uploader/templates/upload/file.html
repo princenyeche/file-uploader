@@ -1,0 +1,23 @@
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>File Uploaded!</strong> You should check the link below
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    <hr>
+  {% if filename %}
+    <ul type="list">
+      <li> File Name: {{ filename }} <a href="{{ url_for('view', filename=filename) }}" target="_blank">View</a> |
+        <a href="{{ url_for('delete', filename=filename) }}">Delete</a></li>
+
+    </ul>
+  {% set folder = folder %}
+  {% elif data  %}
+  <!-- the string on filename basically just shows a view folder -->
+  <a href="{{ url_for('delete', filename='folder') }}">Delete All files</a></li>
+  {% for file in data %}
+  <ul type="list">
+    <li>File Name: {{ file }} <a href="{{ url_for('view', filename=file) }}" target="_blank">View</a>
+
+  </ul>
+  {% endfor %}
+{% endif %}
