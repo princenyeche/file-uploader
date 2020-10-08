@@ -35,7 +35,7 @@ app.config["MAX_CONTENT_LENGTH"] = 2 * 1024 * 1024
 our_dir = os.path.join(app.config["UPLOAD_FOLDER"])
 
 if not os.path.exists(our_dir):
-    os.makedirs(our_dir)
+    os.mkdir(our_dir)
 
 
 # here we generated a random string for our folder below
