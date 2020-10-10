@@ -99,8 +99,8 @@ def uploader():
                         elif "__" in z:
                             os.rmdir(z)
                         else:
-                            for name in os.listdir(z):
-                                multiple_files.append(name)
+                            for names in os.listdir(z):
+                                multiple_files.append(names)
 
             else:
                 filename = secure_filename(file.filename)
@@ -148,7 +148,6 @@ def delete(filename):
 # to access the resource via API, e.g curl
 @app.route("/api", methods=("GET", "POST"))
 def api():
-    multiple_files = []
     show = []
     stat = "success"
     bstat = "error"
